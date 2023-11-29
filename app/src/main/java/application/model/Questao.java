@@ -1,4 +1,4 @@
-ackage application.model;
+package application.model;
 
 import java.util.Set;
 
