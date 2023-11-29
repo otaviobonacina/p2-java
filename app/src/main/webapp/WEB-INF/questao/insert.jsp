@@ -11,25 +11,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <title>Editar Alternativa</title>
+        <title>Nova Questão</title>
     </head>
 
     <body>
         <div class="container">
-            <h1>Editar Alternativa</h1>
-            <form action="/alternativa/update" method="post">
-                <input type="hidden" name="id" value="${alternativa.id}" />
+            <h1>Nova Questão</h1>
+            <form action="/questao/insert" method="post">
                 <div class="form-group">
-                    <label for="texto">Texto</label>
-                    <input type="text" class="form-control" name="texto" value="${alternativa.texto}" />
-                    <label for="correta">Correta</label>
-                    <input type="checkbox" name="correta" value="${alternativa.correta}"/>
-                    <label for="falso">Falso</label>
-                    <input type="checkbox" name="falso" value="${alternativa.falso}"/>
+                    <label for="enunciado">Enunciado</label>
+                    <input type="text" class="form-control" name="enunciado" />
+
                 </div>
-                <a href="/alternativa/list" class="btn btn-primary">Voltar</a>
+                <a href="/questao/list" class="btn btn-primary">Voltar</a>
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
+
         </div>
     </body>
 
